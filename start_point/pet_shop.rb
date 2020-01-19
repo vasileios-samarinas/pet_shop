@@ -34,7 +34,7 @@ end
 #that shows the level of stock
 #at the pet shop
 def stock_count(shop)
-  shop[:pets].count
+  shop[:pets].count()
 end
 
 #The below is a function
@@ -95,4 +95,11 @@ end
 #customer
 def remove_customer_cash(client,money)
   client[:cash]-=money
+end
+
+#The below is a function
+#that shows that counts the pets
+#of each customer
+def customer_pet_count(client)
+client[:pets].count()
 end
