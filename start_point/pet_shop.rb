@@ -76,3 +76,9 @@ def remove_pet_by_name(shop,pet_name)
     end
   end
 end
+
+#The below is a function
+#that adds a new pet to the pet shop
+def add_pet_to_stock(shop,new_entry)
+shop[:pets].push(new_entry)
+end
