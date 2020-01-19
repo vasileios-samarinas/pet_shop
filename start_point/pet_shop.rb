@@ -82,3 +82,10 @@ end
 def add_pet_to_stock(shop,new_entry)
 shop[:pets].push(new_entry)
 end
+
+#The below is a function
+#that shows the total cash of each
+#customer
+def customer_cash(client)
+  client[:cash]
+end
