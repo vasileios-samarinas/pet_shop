@@ -62,3 +62,17 @@ def find_pet_by_name(shop,pet_name)
   end
     return nil
 end
+
+#The below is a function
+#that removes a pet
+#of the pet shop based on the given name.
+#When the pet is removed from
+#the shop list, it shows nil.
+def remove_pet_by_name(shop,pet_name)
+  for animal in shop[:pets]
+    if pet_name == animal[:name]
+      shop[:pets].delete(animal)
+      return nil
+    end
+  end
+end
