@@ -49,3 +49,16 @@ breed_array=[]
   end
   return breed_array
 end
+
+#The below is a function
+#that finds a pet
+#of the pet shop based on the given name.
+#Otherwise, it shows nil.
+def find_pet_by_name(shop,pet_name)
+  for animal in shop[:pets]
+    if pet_name == animal[:name]
+      return animal
+    end
+  end
+    return nil
+end
