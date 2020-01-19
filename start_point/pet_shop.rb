@@ -103,3 +103,9 @@ end
 def customer_pet_count(client)
 client[:pets].count()
 end
+
+#The below is a function
+#that adds a pet to customer
+def add_pet_to_customer(client,new_entry)
+client[:pets].push(new_entry)
+end
