@@ -115,9 +115,10 @@ end
 #to get the new pet
 def customer_can_afford_pet(client,new_entry)
   for customer in client
-    if client[:cash] > new_entry[:price]
+    if client[:cash] >= new_entry[:price]
     client[:pets].push(new_entry)
     return true
     end
   end
+  return false
 end
