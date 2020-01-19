@@ -89,3 +89,10 @@ end
 def customer_cash(client)
   client[:cash]
 end
+
+#The below is a function
+#that shows that removes the cash of each
+#customer
+def remove_customer_cash(client,money)
+  client[:cash]-=money
+end
