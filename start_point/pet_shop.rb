@@ -109,3 +109,15 @@ end
 def add_pet_to_customer(client,new_entry)
 client[:pets].push(new_entry)
 end
+
+#The below is a function that
+#checks if the customer can afford
+#to get the new pet
+def customer_can_afford_pet(client,new_entry)
+  for customer in client
+    if client[:cash] > new_entry[:price]
+    client[:pets].push(new_entry)
+    return true
+    end
+  end
+end
